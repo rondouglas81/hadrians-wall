@@ -1,0 +1,141 @@
+.cohorts {
+  display: flex;
+  background-color: beige;
+  padding: 8px;
+}
+
+.cohort {
+  display: flex;
+  flex: 33%;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 24px;
+}
+
+.cohort-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+  text-align: center;
+  font-size: 18px;
+  color: yellow;
+  background-color: red;
+}
+
+.cohort-icon[data-side="left"]::before {
+  content: "<";
+}
+.cohort-icon[data-side="center"]::before {
+  content: "^";
+}
+.cohort-icon[data-side="right"]::before {
+  content: ">";
+}
+
+.cohort-name {
+  margin-right: 8px;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.cohort-cost-icon {
+  width: 15px;
+  height: 20px;
+  margin-right: 8px;
+  text-align: center;
+  color: yellow;
+  background-color: red;
+}
+
+.cohort-input-container {
+  display: flex;
+  align-items: center;
+}
+
+.mining-track {
+  display: flex;
+  background-color: beige;
+  padding: 8px;
+  align-items: center;
+}
+
+.mining-track-info {
+  flex: 10%;
+  margin-right: 8px;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.mining-track-column {
+  display: flex;
+  flex: 30%;
+  justify-content: space-around;
+  margin: 0 12px;
+}
+
+.wall-guard-track {
+  display: flex;
+  background-color: beige;
+  padding: 8px;
+  align-items: center;
+}
+
+.wall-guard-track-info {
+  flex: 10%;
+  margin-right: 8px;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.wall-guard-track-column {
+  display: flex;
+  flex: 30%;
+  justify-content: space-around;
+  margin: 0 12px;
+}
+
+.cippi-track {
+  display: flex;
+  background-color: beige;
+  padding: 8px;
+  align-items: center;
+}
+
+.cippi-track-info {
+  flex: 10%;
+  margin-right: 8px;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.cippi-track-column {
+  display: flex;
+  flex: 30%;
+  justify-content: space-around;
+  margin: 0 12px;
+}
+.three-column-track {
+  display: flex;
+  background-color: beige;
+  padding: 8px;
+  align-items: center;
+}
+
+.three-column-track-info {
+  flex: 10%;
+  margin-right: 8px;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.three-column-track-column {
+  display: flex;
+  flex: 30%;
+  justify-content: space-around;
+  margin: 0 12px;
+}
