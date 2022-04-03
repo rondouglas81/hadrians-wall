@@ -1,0 +1,15 @@
+.input-box {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  margin: 2px;
+}
+
+.input-box[data-filled="1"] {
+  background-color: black;
+}
+
+.input-box[data-wide="true"] {
+  width: 50px;
+}

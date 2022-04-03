@@ -1,5 +1,6 @@
 import { PrismaClient } from "@prisma/client";
 import bcrypt from "bcryptjs";
+import { kill } from "process";
 
 const prisma = new PrismaClient();
 
@@ -36,6 +37,13 @@ async function seed() {
     data: {
       title: "My second note",
       body: "Hello, world!",
+      userId: user.id,
+    },
+  });
+
+  await prisma.game.create({
+    data: {
+      title: "My first game",
       userId: user.id,
     },
   });
