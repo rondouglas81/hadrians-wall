@@ -116,7 +116,7 @@ export const useGameData = () => {
         return input;
       }),
     };
-    setCippiTrack(newWallTrack);
+    setWallTrack(newWallTrack);
   };
 
   const actions = {
