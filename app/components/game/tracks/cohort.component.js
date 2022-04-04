@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { InputBox } from "~/components/game/input/input-box.component";
 import { GameContext } from "~/context/game.context";
+import { getIconFromReward } from "~/utils";
 
 export const Cohort = ({ side }) => {
   const { cohorts, actions } = useContext(GameContext);
@@ -19,6 +20,7 @@ export const Cohort = ({ side }) => {
           <InputBox
             key={index}
             value={config.value}
+            icon={getIconFromReward(config.reward)}
             onClick={() => handleCohortClicked(index)}
           />
         ))}

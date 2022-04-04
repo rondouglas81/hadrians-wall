@@ -1,5 +1,6 @@
 import React from "react";
 import { InputBox } from "~/components/game/input/input-box.component";
+import { getIconFromReward } from "~/utils";
 
 export const ThreeColumnTrack = ({ track, handleClick }) => {
   return (
@@ -13,6 +14,7 @@ export const ThreeColumnTrack = ({ track, handleClick }) => {
               key={config.id}
               value={config.value}
               wide={config.reward?.length > 1}
+              icon={getIconFromReward(config.reward)}
               onClick={() => handleClick(config.id)}
             />
           ))}
@@ -25,6 +27,7 @@ export const ThreeColumnTrack = ({ track, handleClick }) => {
               key={config.id}
               value={config.value}
               wide={config.reward?.length > 1}
+              icon={getIconFromReward(config.reward)}
               onClick={() => handleClick(config.id)}
             />
           ))}
@@ -37,6 +40,7 @@ export const ThreeColumnTrack = ({ track, handleClick }) => {
               key={config.id}
               value={config.value}
               wide={config.reward?.length > 1}
+              icon={getIconFromReward(config.reward)}
               onClick={() => handleClick(config.id)}
             />
           ))}

@@ -45,3 +45,47 @@ export function useUser(): User {
 export function validateEmail(email: unknown): email is string {
   return typeof email === "string" && email.length > 3 && email.includes("@");
 }
+
+export function getIconFromReward(rewards) {
+  return rewards?.map((reward) => {
+    switch (reward) {
+      case "resource":
+        return "🌾";
+      case "soldier":
+        return "🛡";
+      case "builder":
+        return "🏗";
+      case "servant":
+        return "💁";
+      case "civilian":
+        return "👨";
+      case "renown":
+        return "💪";
+      case "piety":
+        return "🙏";
+      case "valor":
+        return "💪";
+      case "discipline":
+        return "🙏";
+      case "production":
+        return "🏗";
+      case "cohort":
+        return "🏗";
+      case "trainingGroundSword":
+        return "🛡";
+      case "trader":
+        return "💁";
+      case "performer":
+        return "💁";
+      case "priest":
+        return "🙏";
+      case "apparitory":
+        return "🙏";
+      case "patrician":
+        return "💪";
+      case "scout":
+        return "💪";
+    }
+    return null;
+  });
+}

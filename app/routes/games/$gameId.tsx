@@ -1,4 +1,5 @@
 import { useCatch } from "remix";
+import { PlayerSupply } from "~/components/game/player-supply.component";
 import { Cohorts } from "~/components/game/tracks/cohorts.component";
 import { MiningTrack } from "~/components/game/tracks/mining.component";
 import { WallGuardTrack } from "~/components/game/tracks/wall-guard.component";
@@ -22,6 +23,7 @@ export default function GamePage() {
   return (
     <GameContext.Provider value={gameData}>
       <div>
+        <PlayerSupply />
         <Cohorts />
         <MiningTrack />
         <WallGuardTrack />
